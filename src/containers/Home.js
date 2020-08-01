@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment} from 'react';
 import { motion } from "framer-motion";
 
 
@@ -42,26 +42,46 @@ const stagger = {
 class Home extends Component {
     render(){
         return (
-            <motion.div 
-              initial='initial' 
-              animate='animate' 
-              exit={{ opacity: 0 }}
-              >
-                <motion.div>
-                    <Intro />
-                </motion.div>
-                <h2>Programming</h2>
-                <motion.div variants={stagger}>
-                    <Project name='Digital Brain' pageName='DigBrain'/>
-                    <Project name='AirBnb clone' pageName='DigBrain'/>
-                    <Project />
-                </motion.div>
-
-                <h2>UI / UX </h2>
-                <Project />
-                <Project />
-                <Project />
+          <Fragment>       
+            <motion.div className='container'>
+                <Intro />
             </motion.div>
+            
+           
+                <motion.div className="project-div">
+                        
+                        <div className="project-info">
+                          <div className="project-titles">
+                            <p>Full Stack + Front-end projects</p>
+                            <h2> Programming </h2>
+                          </div>
+
+                          <Project className="project-card" name='Digital Brain' pageName='DigBrain'/>
+                          <Project className="project-card" name='AirBnb clone' pageName='DigBrain'/>
+                          <Project className="project-card" name='Facebook clone' pageName='DigBrain'/>
+                        </div>
+
+                        <div className="project-info">
+                          <div className="project-titles">
+                            <p> Design </p>
+                            <h2> UI / UX  </h2>
+                          </div>
+                          <Project className="project-card" name='Digital Brain' pageName='DigBrain'/>
+                          <Project className="project-card" name='AirBnb clone' pageName='DigBrain'/>
+                          <Project className="project-card" name='Facebook clone' pageName='DigBrain'/>
+                        </div>
+
+
+                </motion.div>
+            
+                  
+            
+                  {/* <p className="topicp">Design</p>
+                        <h2 className="topicheadings">UI/UX </h2>
+                        <Project className='card project' name='Spotify redesigned' pageName='DigBrain'/>
+                     */}
+            </Fragment>
+          // </motion.div>
         )
     }
 }

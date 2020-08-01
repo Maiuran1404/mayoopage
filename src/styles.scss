@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');
 
 $primary-color: #131313;
-$font-stack:    Helvetica, sans-serif;
+$font-stack:    'IBM Plex Sans', sans-serif;
 
 body {
   font-family: $font-stack, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -13,10 +14,52 @@ body {
 //   overflow: hidden;
 }
 
+.project-div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  .project-info{
+    display: grid;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: left;
+    width: 100%;
+    .project-titles{
+      margin-left: 150px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      p{
+        color: red;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      h2{
+        margin-top: 0px;
+      }
+    }
+    .project-card{
+      box-sizing: border-box;
+      position: relative;
+      border-radius: 12px;
+      padding: 24px;
+      cursor: pointer;
+      background: #ffffff;
+      width: 400px;
+      height: 200px;
+      margin-left: 100px;
+      margin-top: 20px;
+    }
+  }
+}
+
+
 
 .container {
-  width: 1540px;
-  margin: 0 auto;
+  display: flex;
+  // width: 1080px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
   &.left {
     height: 100vh;
     display: flex;
@@ -24,67 +67,66 @@ body {
     align-items: left;
   }
   &.center {
-    height: 100vh;
+    
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
   }
   .title {
     position: relative;
-    width: 350px;
+    width: 10px;
     h1 {
       font-size: 2rem;
       margin: 8px 0;
     }
   }
   .product-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: left;
     width: 100%;
     padding: 0 80px;
-    &.project {
-      width: 20%
-    }
     img {
       display: flex;
-      margin: 0 auto;
+      margin: 15 auto;
       position: absolute;
     }
     .card {
       box-sizing: border-box;
-      position: absolute;
+      position: relative;
       border-radius: 12px;
       padding: 24px;
       cursor: pointer;
       background: #ffffff;
-      width: 425px;
+      width: 625px;
       height: 425px;
       margin: 24px;
       &.project {
-        width: 200px;
-        height: 205px;
-
+        width: 400px;
+        height: 200px;
       }
       .category {
         font-size: 0.875rem;
-        color: #424550;
+        color: #7C9CBF;
         font-weight: 500;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 32px;
-        display: block;
+        // text-align: left;
+        // padding-bottom: 0;
+        // width: 100%;
+        // margin-bottom: 32px;
+        // display: block;
       }
       .product-info {
-        position: absolute;
-        width: 375px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        bottom: 24px;
+        padding-top: 0px;
+        // position: absolute;
+        // width: 375px;
+        // display: flex;
+        // align-items: left;
+        // justify-content: space-between;
+        // left: 0;
+        // right: 0;
+        // margin: 0 auto;
+        // bottom: 24px;
         h4 {
           color: #282828;
           font-size: 1.1rem;
@@ -96,6 +138,8 @@ body {
     }
   }
 }
+
+
 
 .fullscreen {
   height: 100vh;

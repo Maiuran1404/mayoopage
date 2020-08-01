@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { motion } from "framer-motion";
-
+import '../styles.scss';
 
 // Our custom easing
 let easing = [0.6, -0.05, 0.01, 0.99];
@@ -49,9 +49,9 @@ class Project extends Component {
     render(){
 
         return (
-          <div className="container left">
-          <div className='product-row project'>
-            <motion.div variants={stagger} className='card project'>
+          <div className="project-div">
+          <div className='project-info'>
+            <motion.div variants={stagger} className='project-card'>
                 <h3>Here is project: {this.props.name}</h3>
                 <button onClick={() => this.handleClick(this.props.pageName)}> Click here </button>
             </motion.div>
