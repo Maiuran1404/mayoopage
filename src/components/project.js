@@ -51,12 +51,20 @@ class Project extends Component {
         return (
           <div className="project-div">
           <div className='project-info'>
-            <motion.div 
+            <motion.div
+              animate={{
+                x: 0,
+                backgroundColor: `${this.props.color}`,
+                boxShadow: `5px 5px 0 rgba(0, 0, 0, 0.2)`,
+                
+              }}
+              style={{ rotate: 0, x: "calc(50vh - 100px)" }}  
               whileHover={{ scale: 1.15 }}
               whileTap={{ scale: 0.85 }}
+              backgroundColor="#fff000"
               className='project-card'
               onClick={() => this.handleClick(this.props.pageName)}>
-                <h3>Here is project: {this.props.name}</h3>
+                <h3> {this.props.name} </h3>
             </motion.div>
           </div>
           </div>

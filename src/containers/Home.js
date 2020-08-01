@@ -56,9 +56,9 @@ class Home extends Component {
                             <h2> Programming </h2>
                           </div>
 
-                          <Project className="project-card" name='Digital Brain' pageName='DigBrain'/>
-                          <Project className="project-card" name='AirBnb clone' pageName='DigBrain'/>
-                          <Project className="project-card" name='Facebook clone' pageName='DigBrain'/>
+                          <Project className="project-card" color='#0880AE' name='Digital Brain' pageName='DigBrain'/>
+                          <Project className="project-card" color='#756F86' name='AirBnb clone' pageName='DigBrain'/>
+                          <Project className="project-card" color='#7C9CBF' name='Facebook clone' pageName='DigBrain'/>
                         </div>
 
                         <div className="project-info">
@@ -66,9 +66,13 @@ class Home extends Component {
                             <p> Design </p>
                             <h2> UI / UX  </h2>
                           </div>
-                          <Project className="project-card" name='Digital Brain' pageName='DigBrain'/>
-                          <Project className="project-card" name='AirBnb clone' pageName='DigBrain'/>
-                          <Project className="project-card" name='Facebook clone' pageName='DigBrain'/>
+                          <Project 
+                            className="project-card" 
+                            name='Digital Brain'
+                            color='#F2AC57'
+                            pageName='DigBrain'/>
+                          <Project className="project-card" color='#14A38B' name='AirBnb clone' pageName='DigBrain'/>
+                          <Project className="project-card" color='#FF7171' name='Facebook clone' pageName='DigBrain'/>
                         </div>
 
 
