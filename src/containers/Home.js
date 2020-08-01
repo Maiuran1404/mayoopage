@@ -11,8 +11,8 @@ class Home extends Component {
             <div>
                 <Intro />
                 <h2>Programming</h2>
-                <Project />
-                <Project />
+                <Project name='Digital Brain'/>
+                <Project name='AirBnb clone'/>
                 <Project />
                 <h2>UI / UX </h2>
                 <Project />
