@@ -6,7 +6,7 @@ class intro extends Component {
     render() {
         return (
             <div className='container center'>
-                <div className='product-row'>
+                <motion.div className='product-row'>
                 <motion.img
                     initial={{ x: 400, y: -100, opacity: 0 }}
                     animate={{ x: 300, y: -100, opacity: 1 }}
@@ -17,9 +17,11 @@ class intro extends Component {
                     <motion.div
                     whileHover={{ scale: 1.15 }}
                     whileTap={{ scale: 0.85 }}
-                    
                     className='card'>
-                        <p className='category'>Full stack + UI/UX </p>
+                        <p 
+                        initial={{ x: 400, y: -100, opacity: 0 }}
+                        animate={{ x: 300, y: -100, opacity: 1 }}
+                        className='category'>Full stack + UI/UX </p>
                         <h2 className='product-info'>Maiuran Loganathan</h2>
                         <h3>Why</h3>
                         <p>Effectively build products- and startups that solve meaningful challenges</p>
@@ -28,7 +30,7 @@ class intro extends Component {
                         <p>UI/UX: Figma, Sketch</p>     
                         <p>Mobile: Swift</p>    
                     </motion.div>
-                </div>
+                </motion.div>
             </div>
         );
     }

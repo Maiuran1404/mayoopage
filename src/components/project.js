@@ -51,9 +51,12 @@ class Project extends Component {
         return (
           <div className="project-div">
           <div className='project-info'>
-            <motion.div variants={stagger} className='project-card'>
+            <motion.div 
+              whileHover={{ scale: 1.15 }}
+              whileTap={{ scale: 0.85 }}
+              className='project-card'
+              onClick={() => this.handleClick(this.props.pageName)}>
                 <h3>Here is project: {this.props.name}</h3>
-                <button onClick={() => this.handleClick(this.props.pageName)}> Click here </button>
             </motion.div>
           </div>
           </div>
