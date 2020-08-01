@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import './App.css';
+import "./styles.scss";
 
 //Containers
 import Home from './containers/Home';
@@ -11,7 +11,6 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <h1>  // Should be header that applies to all pages</h1>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/Digbrain' component={DigitalBrain} />

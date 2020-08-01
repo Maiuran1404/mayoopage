@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { motion } from "framer-motion";
 
+
 //Components
 import Intro from '../components/intro';
 import Project from '../components/project';
@@ -41,7 +42,11 @@ const stagger = {
 class Home extends Component {
     render(){
         return (
-            <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
+            <motion.div 
+              initial='initial' 
+              animate='animate' 
+              exit={{ opacity: 0 }}
+              >
                 <motion.div>
                     <Intro />
                 </motion.div>
