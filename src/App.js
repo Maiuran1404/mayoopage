@@ -4,6 +4,7 @@ import './App.css';
 
 //Containers
 import Home from './containers/Home';
+import DigitalBrain from './containers/DigitalBrain';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
           <h1>  // Should be header that applies to all pages</h1>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/Digbrain' component={DigitalBrain} />
         </Switch>
         </div>
       </Router>

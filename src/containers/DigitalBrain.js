@@ -39,24 +39,23 @@ const stagger = {
 
 
 class Home extends Component {
+
+    handleClick(){
+        window.location.href='/';
+    }
+
     render(){
         return (
             <motion.div initial='initial' animate='animate' exit={{ opacity: 0 }}>
                 <motion.div>
-                    <Intro />
+                <h2>Digital Brain information</h2>
+                <motion.div variants={stagger}>
+                    <h3>Information</h3>
+                    <button onClick={this.handleClick}> Click here </button>
+                </motion.div>
                 </motion.div>
                 
-                <h2>Programming</h2>
-                <motion.div variants={stagger}>
-                    <Project name='Digital Brain' pageName='DigBrain'/>
-                    <Project name='AirBnb clone' pageName='DigBrain'/>
-                    <Project />
-                </motion.div>
 
-                <h2>UI / UX </h2>
-                <Project />
-                <Project />
-                <Project />
             </motion.div>
         )
     }
