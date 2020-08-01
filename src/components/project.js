@@ -50,7 +50,7 @@ class Project extends Component {
 
         return (
           <div className="container left">
-          <div className='product-row'>
+          <div className='product-row project'>
             <motion.div variants={stagger} className='card project'>
                 <h3>Here is project: {this.props.name}</h3>
                 <button onClick={() => this.handleClick(this.props.pageName)}> Click here </button>

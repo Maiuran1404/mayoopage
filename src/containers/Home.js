@@ -50,7 +50,6 @@ class Home extends Component {
                 <motion.div>
                     <Intro />
                 </motion.div>
-                
                 <h2>Programming</h2>
                 <motion.div variants={stagger}>
                     <Project name='Digital Brain' pageName='DigBrain'/>

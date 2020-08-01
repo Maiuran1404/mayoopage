@@ -43,6 +43,9 @@ body {
     align-items: center;
     width: 100%;
     padding: 0 80px;
+    &.project {
+      width: 20%
+    }
     img {
       display: flex;
       margin: 0 auto;
@@ -61,6 +64,7 @@ body {
       &.project {
         width: 200px;
         height: 205px;
+
       }
       .category {
         font-size: 0.875rem;
