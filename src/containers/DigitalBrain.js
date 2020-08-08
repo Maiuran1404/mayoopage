@@ -54,8 +54,7 @@ class Home extends Component {
                     <button onClick={this.handleClick}> Click here </button>
                 </motion.div>
                 </motion.div>
-                
-
+              
             </motion.div>
         )
     }

@@ -41,6 +41,8 @@ const Link = styled.a`
 
 const ProjecTitle = styled.h3`
   font-size: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
   color: black;
   font-weight: 500;
   margin-left: 20px;
@@ -49,6 +51,15 @@ const ProjectDesc = styled.p`
   font-size: 14px;
   color: black;
   font-weight: 200px;
+  margin-left: 20px;
+`
+
+const ProjectSub = styled.p`
+  font-size: 12px;
+  margin-top: 0px;
+  padding-top: 0px;
+  color: black;
+  font-weight: 100px;
   margin-left: 20px;
 `
 
@@ -67,7 +78,7 @@ const ProjectTag = styled.div`
 `
 
 
-class Project extends Component {
+class CV extends Component {
 
     handleClick(){
         // e.preventDefault();
@@ -98,6 +109,7 @@ class Project extends Component {
               className='project-card'
               onClick={() => this.handleClick(this.props.pageName)}>
                 <ProjecTitle> {this.props.name} </ProjecTitle>
+                <ProjectSub> {this.props.sub}</ProjectSub>
                 {this.props.tag1 && <ProjectTag> {this.props.tag1}</ProjectTag>}
                 {this.props.tag2 && <ProjectTag> {this.props.tag2}</ProjectTag>}
                 {this.props.tag3 && <ProjectTag> {this.props.tag3}</ProjectTag>}
@@ -112,4 +124,4 @@ class Project extends Component {
     }
 }
 
-export default Project;
+export default CV;
